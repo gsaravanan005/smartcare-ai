@@ -1,0 +1,35 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Node / Frontend
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+.vite/
+frontend/node_modules/.vite/
+
+# Pytest / Cache / Temp
+.pytest_cache/
+.sf/
+*.log
+static/temp_charts/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Temporary files & Office locks
+~$*
+
+# Database files
+*.db
+*.sqlite3
+
+# Large artifacts/build outputs
+# artifacts/

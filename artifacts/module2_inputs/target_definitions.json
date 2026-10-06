@@ -1,0 +1,14 @@
+{
+  "diabetes": {
+    "col": "Diabetes_binary",
+    "type": "binary"
+  },
+  "cardio": {
+    "col": "cardio",
+    "type": "binary"
+  },
+  "ckd": {
+    "col": "classification",
+    "type": "binary"
+  }
+}

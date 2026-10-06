@@ -1,0 +1,75 @@
+{
+  "total_features": 30,
+  "all_features": [
+    "age_years",
+    "gender",
+    "education",
+    "income",
+    "bmi",
+    "high_bp",
+    "ap_hi",
+    "ap_lo",
+    "pulse_pressure",
+    "mean_arterial_pressure",
+    "cholesterol",
+    "glucose",
+    "serum_creatinine",
+    "blood_urea",
+    "hemoglobin",
+    "albumin_level",
+    "specific_gravity",
+    "bun_creatinine_ratio",
+    "egfr_proxy",
+    "anemia_flag",
+    "smoker",
+    "phys_activity",
+    "alcohol_consumption",
+    "fruits",
+    "veggies",
+    "heart_disease_or_attack",
+    "stroke",
+    "diff_walk",
+    "gen_hlth",
+    "combined_vascular_risk"
+  ],
+  "demographic": [
+    "age_years",
+    "gender",
+    "education",
+    "income"
+  ],
+  "vital_signs": [
+    "bmi",
+    "high_bp",
+    "ap_hi",
+    "ap_lo",
+    "pulse_pressure",
+    "mean_arterial_pressure"
+  ],
+  "laboratory": [
+    "cholesterol",
+    "glucose",
+    "serum_creatinine",
+    "blood_urea",
+    "hemoglobin",
+    "albumin_level",
+    "specific_gravity",
+    "bun_creatinine_ratio",
+    "egfr_proxy",
+    "anemia_flag"
+  ],
+  "lifestyle": [
+    "smoker",
+    "phys_activity",
+    "alcohol_consumption",
+    "fruits",
+    "veggies"
+  ],
+  "history_comorbidities": [
+    "heart_disease_or_attack",
+    "stroke",
+    "diff_walk",
+    "gen_hlth",
+    "combined_vascular_risk"
+  ]
+}

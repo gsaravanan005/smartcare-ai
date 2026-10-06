@@ -1,0 +1,226 @@
+[
+  {
+    "original": "Age",
+    "standardized": "age_years",
+    "type": "numerical",
+    "disease": "diabetes",
+    "transformation": "Ordinal binned / Direct years",
+    "usage": "Common Predictor"
+  },
+  {
+    "original": "age",
+    "standardized": "age_years",
+    "type": "numerical",
+    "disease": "cvd",
+    "transformation": "age / 365.25",
+    "usage": "Common Predictor"
+  },
+  {
+    "original": "age",
+    "standardized": "age_years",
+    "type": "numerical",
+    "disease": "ckd",
+    "transformation": "Direct years",
+    "usage": "Common Predictor"
+  },
+  {
+    "original": "Sex",
+    "standardized": "gender",
+    "type": "binary",
+    "disease": "diabetes",
+    "transformation": "1: Male, 0: Female",
+    "usage": "Common Predictor"
+  },
+  {
+    "original": "gender",
+    "standardized": "gender",
+    "type": "binary",
+    "disease": "cvd",
+    "transformation": "2: Male, 1: Female -> 1: Male, 0: Female",
+    "usage": "Common Predictor"
+  },
+  {
+    "original": "BMI",
+    "standardized": "bmi",
+    "type": "numerical",
+    "disease": "diabetes",
+    "transformation": "Direct BMI",
+    "usage": "Common Predictor"
+  },
+  {
+    "original": "bmi",
+    "standardized": "bmi",
+    "type": "numerical",
+    "disease": "cvd",
+    "transformation": "weight / (height/100)^2",
+    "usage": "Common Predictor"
+  },
+  {
+    "original": "HighBP",
+    "standardized": "high_bp",
+    "type": "binary",
+    "disease": "diabetes",
+    "transformation": "1.0 / 0.0 flag",
+    "usage": "Vascular Risk Indicator"
+  },
+  {
+    "original": "ap_hi",
+    "standardized": "systolic_bp",
+    "type": "numerical",
+    "disease": "cvd",
+    "transformation": "mmHg value",
+    "usage": "CVD Specific Predictor"
+  },
+  {
+    "original": "ap_lo",
+    "standardized": "diastolic_bp",
+    "type": "numerical",
+    "disease": "cvd",
+    "transformation": "mmHg value",
+    "usage": "CVD Specific Predictor"
+  },
+  {
+    "original": "bp",
+    "standardized": "blood_pressure",
+    "type": "numerical",
+    "disease": "ckd",
+    "transformation": "mmHg value",
+    "usage": "CKD Specific Predictor"
+  },
+  {
+    "original": "htn",
+    "standardized": "high_bp",
+    "type": "binary",
+    "disease": "ckd",
+    "transformation": "yes/no -> 1/0",
+    "usage": "Vascular Risk Indicator"
+  },
+  {
+    "original": "HighChol",
+    "standardized": "high_cholesterol",
+    "type": "binary",
+    "disease": "diabetes",
+    "transformation": "1.0 / 0.0 flag",
+    "usage": "Metabolic Predictor"
+  },
+  {
+    "original": "cholesterol",
+    "standardized": "cholesterol_level",
+    "type": "categorical",
+    "disease": "cvd",
+    "transformation": "1: Normal, 2: Above Normal, 3: High",
+    "usage": "CVD Specific Predictor"
+  },
+  {
+    "original": "gluc",
+    "standardized": "glucose_level",
+    "type": "categorical",
+    "disease": "cvd",
+    "transformation": "1: Normal, 2: Above Normal, 3: High",
+    "usage": "Metabolic Predictor"
+  },
+  {
+    "original": "dm",
+    "standardized": "diabetes_history",
+    "type": "binary",
+    "disease": "ckd",
+    "transformation": "yes/no -> 1/0",
+    "usage": "Comorbidity Flag"
+  },
+  {
+    "original": "bgr",
+    "standardized": "blood_glucose_random",
+    "type": "numerical",
+    "disease": "ckd",
+    "transformation": "mg/dL value",
+    "usage": "CKD Specific Predictor"
+  },
+  {
+    "original": "Smoker",
+    "standardized": "smoking_status",
+    "type": "binary",
+    "disease": "diabetes",
+    "transformation": "1.0 / 0.0 flag",
+    "usage": "Behavioral Predictor"
+  },
+  {
+    "original": "smoke",
+    "standardized": "smoking_status",
+    "type": "binary",
+    "disease": "cvd",
+    "transformation": "1 / 0 flag",
+    "usage": "Behavioral Predictor"
+  },
+  {
+    "original": "PhysActivity",
+    "standardized": "physical_activity",
+    "type": "binary",
+    "disease": "diabetes",
+    "transformation": "1.0 / 0.0 flag",
+    "usage": "Behavioral Predictor"
+  },
+  {
+    "original": "active",
+    "standardized": "physical_activity",
+    "type": "binary",
+    "disease": "cvd",
+    "transformation": "1 / 0 flag",
+    "usage": "Behavioral Predictor"
+  },
+  {
+    "original": "HvyAlcoholConsump",
+    "standardized": "alcohol_consumption",
+    "type": "binary",
+    "disease": "diabetes",
+    "transformation": "1.0 / 0.0 flag",
+    "usage": "Behavioral Predictor"
+  },
+  {
+    "original": "alco",
+    "standardized": "alcohol_consumption",
+    "type": "binary",
+    "disease": "cvd",
+    "transformation": "1 / 0 flag",
+    "usage": "Behavioral Predictor"
+  },
+  {
+    "original": "sc",
+    "standardized": "serum_creatinine",
+    "type": "numerical",
+    "disease": "ckd",
+    "transformation": "mg/dL value",
+    "usage": "CKD Biomarker"
+  },
+  {
+    "original": "bu",
+    "standardized": "blood_urea",
+    "type": "numerical",
+    "disease": "ckd",
+    "transformation": "mg/dL value",
+    "usage": "CKD Biomarker"
+  },
+  {
+    "original": "hemo",
+    "standardized": "hemoglobin",
+    "type": "numerical",
+    "disease": "ckd",
+    "transformation": "g/dL value",
+    "usage": "CKD Biomarker"
+  },
+  {
+    "original": "al",
+    "standardized": "albumin_level",
+    "type": "categorical",
+    "disease": "ckd",
+    "transformation": "0 to 5 scale",
+    "usage": "CKD Biomarker"
+  },
+  {
+    "original": "sg",
+    "standardized": "specific_gravity",
+    "type": "numerical",
+    "disease": "ckd",
+    "transformation": "1.005 - 1.025",
+    "usage": "CKD Biomarker"
+  }
+]

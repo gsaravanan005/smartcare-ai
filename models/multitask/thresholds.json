@@ -1,0 +1,13 @@
+{
+  "thresholds": {
+    "t2d": 0.39,
+    "cvd": 0.39,
+    "ckd": 0.23
+  },
+  "methodology": "Validation set F1 maximization under minimum clinical sensitivity constraints (T2D>=0.75, CVD>=0.75, CKD>=0.85)",
+  "default_thresholds": {
+    "t2d": 0.4,
+    "cvd": 0.35,
+    "ckd": 0.35
+  }
+}

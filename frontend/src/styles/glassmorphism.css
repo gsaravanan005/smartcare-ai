@@ -1,0 +1,145 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  body {
+    background-color: #080512;
+    color: #FFFFFF;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Glassmorphism & Theme Surface Classes - Dark Purple Healthcare IT Direction */
+.glass-panel {
+  background: rgba(13, 7, 24, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid #2A1A4E;
+  box-shadow: 0 20px 50px rgba(8, 5, 18, 0.8);
+}
+
+.glass-card {
+  background: rgba(18, 10, 36, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid #2A1A4E;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: #7C3AED;
+  box-shadow: 0 12px 35px rgba(124, 58, 237, 0.25);
+  transform: translateY(-2px);
+}
+
+.glass-input {
+  background: #0D0718;
+  border: 1px solid #2A1A4E;
+  color: #FFFFFF;
+  backdrop-filter: blur(8px);
+  transition: all 0.2s ease;
+}
+
+.glass-input:focus {
+  outline: none;
+  border-color: #8B5CF6;
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.3);
+  background: #120A24;
+}
+
+/* Glowing Accents */
+.glow-purple {
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.4);
+}
+
+.glow-neon {
+  box-shadow: 0 0 20px rgba(192, 132, 252, 0.4);
+}
+
+/* Smooth Slide Animations */
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-slide-fade {
+  animation: slideFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Hide scrollbars for clean UI */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom Dark Purple Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080512;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2A1A4E;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7C3AED;
+}
+
+/* 3D Book Page-Turning Effects */
+@keyframes bookFlipForward {
+  0% {
+    transform: perspective(2000px) rotateY(0deg) translateZ(0);
+    box-shadow: 0 0 50px rgba(124, 58, 237, 0.22);
+  }
+  45% {
+    transform: perspective(2000px) rotateY(-24deg) scale(0.97) translateZ(25px);
+    box-shadow: -30px 10px 50px rgba(0, 0, 0, 0.85), 0 0 60px rgba(124, 58, 237, 0.35);
+  }
+  100% {
+    transform: perspective(2000px) rotateY(0deg) translateZ(0);
+    box-shadow: 0 0 50px rgba(124, 58, 237, 0.22);
+  }
+}
+
+@keyframes bookFlipBackward {
+  0% {
+    transform: perspective(2000px) rotateY(0deg) translateZ(0);
+    box-shadow: 0 0 50px rgba(124, 58, 237, 0.22);
+  }
+  45% {
+    transform: perspective(2000px) rotateY(24deg) scale(0.97) translateZ(25px);
+    box-shadow: 30px 10px 50px rgba(0, 0, 0, 0.85), 0 0 60px rgba(124, 58, 237, 0.35);
+  }
+  100% {
+    transform: perspective(2000px) rotateY(0deg) translateZ(0);
+    box-shadow: 0 0 50px rgba(124, 58, 237, 0.22);
+  }
+}
+
+.animate-book-flip-forward {
+  transform-origin: left center;
+  animation: bookFlipForward 0.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.animate-book-flip-backward {
+  transform-origin: right center;
+  animation: bookFlipBackward 0.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}

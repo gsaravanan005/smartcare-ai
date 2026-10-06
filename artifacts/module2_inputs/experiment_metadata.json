@@ -1,0 +1,31 @@
+{
+  "dataset_name": "ckd",
+  "version": "v1_ckd_42",
+  "selected_features": [
+    "sg",
+    "al",
+    "sc",
+    "hemo",
+    "rc",
+    "bun_creatinine_ratio",
+    "egfr_proxy",
+    "anemia_flag",
+    "htn_no",
+    "dm_no"
+  ],
+  "vif_summary": {
+    "sg": 1.72,
+    "al": 1.7,
+    "sc": 3.19,
+    "hemo": 4.28,
+    "rc": 2.09,
+    "bun_creatinine_ratio": 2.06,
+    "egfr_proxy": 3.87,
+    "anemia_flag": 3.18,
+    "htn_no": 2.39,
+    "dm_no": 1.75
+  },
+  "train_size": 350,
+  "val_size": 60,
+  "test_size": 60
+}
